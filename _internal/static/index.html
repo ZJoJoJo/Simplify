@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmallSignal · 小信号方程化简</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234d5fde'/%3E%3Cpath d='M10 34h10l7-17 11 31 7-14h9' fill='none' stroke='white' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/katex/katex.min.js"></script>
+  <script defer src="math-layout.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><div class="brand-icon">∿</div><div><strong>SmallSignal<span class="version">1.1</span></strong><small>小信号方程化简</small></div></div>
+    <nav><span class="local"><i></i> 离线 · 本机计算</span><button id="helpBtn" class="quiet">语法指南 <span>?</span></button><button id="openBtn" class="quiet">打开项目</button><button id="saveBtn" class="outline">保存项目</button></nav>
+  </header>
+  <main>
+    <div class="workspace">
+      <div class="equation-workspace">
+      <section class="panel input-panel" aria-label="方程输入区">
+        <div class="panel-heading"><div><span class="step">01</span><h2>方程输入</h2></div><select id="example" aria-label="选择示例"><option value="user">你的电路示例</option><option value="cs">共源放大器</option><option value="rc">两级 RC 网络</option><option value="blank">空白项目</option></select></div>
+        <div class="editor-label"><span>KaTeX 兼容算式</span><button id="normalizeBtn" class="text-button">规范化下标</button></div>
+        <div class="editor-wrap"><div class="editor-gutter" id="gutter" aria-hidden="true"></div><textarea id="equations" spellcheck="false" autocomplete="off" aria-label="方程代码" placeholder="每行一条方程，例如：&#10;g_{m}*V_{i}+V_{o}/R_{L}=0"></textarea></div>
+        <div class="editor-footer"><span id="lineCount">0 条方程</span><span>每行一条 · % 注释 · Ctrl + Enter 求解</span></div>
+      </section>
+      <section class="panel preview-panel" aria-label="实时预览区">
+        <div class="panel-heading"><div><span class="live-dot"></span><h2>实时公式预览</h2></div><span id="parseStatus" class="status-pill">正在识别</span></div>
+        <div id="preview" class="preview-list" aria-live="polite"></div>
+      </section>
+      </div>
+      <div id="inputNotice" class="notice" hidden></div>
+        <section class="panel setup-panel">
+          <div class="setup-main">
+          <div class="target-setting"><div class="setting-caption"><span class="step">02</span><label class="field-label" for="target">目标表达式</label></div>
+          <div class="target-row"><input id="target" value="V_{o}/V_{i}" spellcheck="false" aria-label="目标表达式"><div id="targetPreview" aria-label="目标公式预览"></div></div></div>
+          <div class="unknown-setting">
+          <div class="variable-heading"><label class="field-label">待求未知量 <small>包含输出量和中间变量</small></label><button id="suggestBtn" class="text-button">识别电压 / 电流</button></div>
+          <div id="variables" class="variable-list" aria-label="选择待求未知量"></div>
+          <p id="parameterSummary" class="parameter-summary"></p>
+          </div>
+          <div class="solve-bottom"><div><label for="frequency">频率符号</label><input id="frequency" value="S" aria-label="频率符号" maxlength="30"></div><button id="solveBtn" class="primary"><span id="solveIcon">✧</span><span id="solveLabel">消元并化简</span><kbd>Ctrl ↵</kbd></button></div>
+          </div>
+        </section>
+        <section class="panel result-panel">
+          <div class="panel-heading"><div><span class="step">03</span><h2>化简结果</h2><span id="resultStatus" class="section-note">等待求解</span></div><div class="output-controls"><button id="fitBtn" class="outline active" aria-pressed="true">整体适配</button><button id="focusBtn" class="outline" aria-pressed="false">展开结果</button><button id="copyBtn" class="primary" disabled>复制 KaTeX</button></div></div>
+          <div id="emptyState" class="empty-state"><span class="empty-symbol">ƒ(s)</span><p>点击「消元并化简」，在这里查看完整输出。结果将精确代回原方程校验。</p></div>
+          <div id="solveError" class="error-box" role="alert" hidden></div>
+          <div id="resultContent" hidden>
+            <div class="result-toolbar"><div class="tabs" role="group" aria-label="结果形式"><button data-form="factor" class="active">因式形式</button><button data-form="frequency">按频率排列</button><button data-form="fraction">有理分式</button></div><div class="result-secondary"><span>长公式自动分行 · 无省略项</span><button id="copyExpandedBtn" class="text-button">复制展开式</button></div></div>
+            <div id="resultMath" class="result-math"></div>
+            <div id="coefficientBlock" class="coefficient-block" hidden><p id="coefficientHeading">精确系数 <span>复制 KaTeX 时包含全部定义</span></p><div id="coefficients"></div></div>
+            <div id="verified" class="verified"></div>
+            <div class="result-details">
+            <details id="conditionsDetails"><summary>成立条件 <span id="conditionCount"></span></summary><p class="detail-note">以下是通用参数解的充分条件。参数使这些条件不成立时，需代入原方程重新求解。</p><div id="conditions" class="condition-list"></div></details>
+            <details><summary>消元结果与代回校验</summary><p id="eliminationNote" class="detail-note"></p><div id="solutions" class="solution-list"></div></details>
+            <details><summary>矩阵方程</summary><div id="matrix" class="matrix"></div></details>
+            <details><summary>KaTeX 源码</summary><p class="detail-note">可直接传给 KaTeX，或粘贴到 Markdown 的 $$ 公式块内。分组显示时包含全部系数定义。</p><textarea id="latexCode" readonly aria-label="结果 KaTeX 代码"></textarea></details>
+            </div>
+            <div class="result-actions"><button id="exportBtn" class="quiet">导出 KaTeX .txt ↗</button><span id="timing"></span></div>
+          </div>
+        </section>
+    </div>
+    <footer><span>SmallSignal · 小信号方程化简</span><span>符号大小写敏感 · 精确分数计算 · 数据保留在本机</span></footer>
+  </main>
+  <div id="toast" role="status" hidden></div>
+  <input type="file" id="fileInput" accept=".json,.smallsignal" hidden>
+  <dialog id="helpDialog"><div class="dialog-heading"><div><p class="eyebrow">QUICK REFERENCE</p><h2>输入语法指南</h2></div><button id="closeHelp" class="quiet" aria-label="关闭指南">✕</button></div><p>实时显示使用 KaTeX；求解支持下列算术语法。显示正确的排版命令不一定能用于计算，不支持的命令会明确报错。</p><table><thead><tr><th>用途</th><th>输入示例</th></tr></thead><tbody><tr><td>下标</td><td><code>V_{o}, g_{m1}, r_{o2}, C_{C}</code></td></tr><tr><td>兼容简写</td><td><code>g_m1 → g_{m1}</code>（完整字母数字作为下标）</td></tr><tr><td>乘除</td><td><code>S*C_{2}, \cdot, /, \frac{V_{1}}{R}</code></td></tr><tr><td>幂与括号</td><td><code>S^{2}, (V_{x}-V_{y}), \left(…\right)</code></td></tr><tr><td>希腊字母 / 根号</td><td><code>\omega, \beta, \sqrt{2}</code></td></tr><tr><td>方程组</td><td>每行一条，或 <code>aligned / cases</code> 环境</td></tr><tr><td>注释</td><td><code>% 这一行的说明</code></td></tr></tbody></table><div class="notice">连续字母视为一个符号：<code>SC_{2}</code> 是独立参数；S 乘 C₂ 请写 <code>S*C_{2}</code>。所有符号（含 I、E、S、pi）都作为变量或参数。</div><p>请选择所有需要解出的未知电压、电流，包括目标中的输出变量。保留输入电压与电路参数。第一版仅支持对所选未知量线性的方程，最多 24 条；不会自动套用近似假设。</p><p>幂指数支持绝对值 ≤ 12 的有理数。小数使用精确分数；暂不支持矩阵命令、微分、积分、分段条件和单位。</p><button id="understoodBtn" class="primary">开始推导</button></dialog>
+</body>
+</html>

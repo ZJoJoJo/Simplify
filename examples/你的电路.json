@@ -1,0 +1,13 @@
+{
+  "format": "smallsignal",
+  "version": 1,
+  "equations": "V_{i}*g_{m1}+V_{1}/r_{o1}+V_{1}*g_{m2}+(V_{1}-V_{x})/r_{o2}=0\nV_{1}*g_{m2}+(V_{1}-V_{x})/r_{o2}-V_{y}*g_{m3}+(V_{x}-V_{y})/r_{o3}=0\nV_{y}*g_{m3}+(V_{y}-V_{x})/r_{o3}+V_{y}/r_{o4}=(V_{o}-V_{y})*S*C_{C}\n(V_{o}-V_{y})*S*C_{C}+V_{o}/R_{2}+V_{o}*S*C_{2}=-V_{x}*g_{m5}\n(V_{o}-V_{y})*S*C_{C}+V_{o}/R_{2}+V_{o}*S*C_{2}=-V_{x}*g_{m5}",
+  "target": "V_{o}/V_{i}",
+  "unknowns": [
+    "V_1",
+    "V_x",
+    "V_y",
+    "V_o"
+  ],
+  "frequency": "S"
+}

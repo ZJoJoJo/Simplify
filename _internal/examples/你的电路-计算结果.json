@@ -1,0 +1,103 @@
+{
+  "target_latex": "\\frac{V_{o}}{V_{i}}",
+  "forms": {
+    "factor": {
+      "latex": "- \\frac{R_{2} g_{m1} r_{o1} \\left(g_{m2} r_{o2} + 1\\right) \\left(C_{C} S g_{m5} r_{o3} r_{o4} - C_{C} S r_{o4} + g_{m3} g_{m5} r_{o3} r_{o4} + g_{m5} r_{o3} + g_{m5} r_{o4}\\right)}{C_{2} C_{C} R_{2} S^{2} g_{m2} r_{o1} r_{o2} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o1} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o2} r_{o4} - C_{2} C_{C} R_{2} S^{2} r_{o3} r_{o4} + C_{2} R_{2} S g_{m2} r_{o1} r_{o2} - C_{2} R_{2} S g_{m3} r_{o3} r_{o4} + C_{2} R_{2} S r_{o1} + C_{2} R_{2} S r_{o2} - C_{2} R_{2} S r_{o3} - C_{2} R_{2} S r_{o4} + C_{C} R_{2} S g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} S g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} + C_{C} R_{2} S g_{m2} r_{o1} r_{o2} + C_{C} R_{2} S g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} + C_{C} R_{2} S g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} - C_{C} R_{2} S g_{m3} r_{o3} r_{o4} + C_{C} R_{2} S g_{m5} r_{o1} r_{o4} + C_{C} R_{2} S g_{m5} r_{o2} r_{o4} + C_{C} R_{2} S r_{o1} + C_{C} R_{2} S r_{o2} - C_{C} R_{2} S r_{o3} - C_{C} R_{2} S r_{o4} + C_{C} S g_{m2} r_{o1} r_{o2} r_{o4} + C_{C} S r_{o1} r_{o4} + C_{C} S r_{o2} r_{o4} - C_{C} S r_{o3} r_{o4} + g_{m2} r_{o1} r_{o2} - g_{m3} r_{o3} r_{o4} + r_{o1} + r_{o2} - r_{o3} - r_{o4}}",
+      "text": "-R_2*g_m1*r_o1*(g_m2*r_o2 + 1)*(C_C*S*g_m5*r_o3*r_o4 - C_C*S*r_o4 + g_m3*g_m5*r_o3*r_o4 + g_m5*r_o3 + g_m5*r_o4)/(C_2*C_C*R_2*S**2*g_m2*r_o1*r_o2*r_o4 + C_2*C_C*R_2*S**2*r_o1*r_o4 + C_2*C_C*R_2*S**2*r_o2*r_o4 - C_2*C_C*R_2*S**2*r_o3*r_o4 + C_2*R_2*S*g_m2*r_o1*r_o2 - C_2*R_2*S*g_m3*r_o3*r_o4 + C_2*R_2*S*r_o1 + C_2*R_2*S*r_o2 - C_2*R_2*S*r_o3 - C_2*R_2*S*r_o4 + C_C*R_2*S*g_m2*g_m3*g_m5*r_o1*r_o2*r_o3*r_o4 + C_C*R_2*S*g_m2*g_m5*r_o1*r_o2*r_o4 + C_C*R_2*S*g_m2*r_o1*r_o2 + C_C*R_2*S*g_m3*g_m5*r_o1*r_o3*r_o4 + C_C*R_2*S*g_m3*g_m5*r_o2*r_o3*r_o4 - C_C*R_2*S*g_m3*r_o3*r_o4 + C_C*R_2*S*g_m5*r_o1*r_o4 + C_C*R_2*S*g_m5*r_o2*r_o4 + C_C*R_2*S*r_o1 + C_C*R_2*S*r_o2 - C_C*R_2*S*r_o3 - C_C*R_2*S*r_o4 + C_C*S*g_m2*r_o1*r_o2*r_o4 + C_C*S*r_o1*r_o4 + C_C*S*r_o2*r_o4 - C_C*S*r_o3*r_o4 + g_m2*r_o1*r_o2 - g_m3*r_o3*r_o4 + r_o1 + r_o2 - r_o3 - r_o4)"
+    },
+    "fraction": {
+      "latex": "\\frac{- C_{C} R_{2} S g_{m1} g_{m2} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} S g_{m1} g_{m2} r_{o1} r_{o2} r_{o4} - C_{C} R_{2} S g_{m1} g_{m5} r_{o1} r_{o3} r_{o4} + C_{C} R_{2} S g_{m1} r_{o1} r_{o4} - R_{2} g_{m1} g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} - R_{2} g_{m1} g_{m2} g_{m5} r_{o1} r_{o2} r_{o3} - R_{2} g_{m1} g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} - R_{2} g_{m1} g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} - R_{2} g_{m1} g_{m5} r_{o1} r_{o3} - R_{2} g_{m1} g_{m5} r_{o1} r_{o4}}{C_{2} C_{C} R_{2} S^{2} g_{m2} r_{o1} r_{o2} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o1} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o2} r_{o4} - C_{2} C_{C} R_{2} S^{2} r_{o3} r_{o4} + C_{2} R_{2} S g_{m2} r_{o1} r_{o2} - C_{2} R_{2} S g_{m3} r_{o3} r_{o4} + C_{2} R_{2} S r_{o1} + C_{2} R_{2} S r_{o2} - C_{2} R_{2} S r_{o3} - C_{2} R_{2} S r_{o4} + C_{C} R_{2} S g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} S g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} + C_{C} R_{2} S g_{m2} r_{o1} r_{o2} + C_{C} R_{2} S g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} + C_{C} R_{2} S g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} - C_{C} R_{2} S g_{m3} r_{o3} r_{o4} + C_{C} R_{2} S g_{m5} r_{o1} r_{o4} + C_{C} R_{2} S g_{m5} r_{o2} r_{o4} + C_{C} R_{2} S r_{o1} + C_{C} R_{2} S r_{o2} - C_{C} R_{2} S r_{o3} - C_{C} R_{2} S r_{o4} + C_{C} S g_{m2} r_{o1} r_{o2} r_{o4} + C_{C} S r_{o1} r_{o4} + C_{C} S r_{o2} r_{o4} - C_{C} S r_{o3} r_{o4} + g_{m2} r_{o1} r_{o2} - g_{m3} r_{o3} r_{o4} + r_{o1} + r_{o2} - r_{o3} - r_{o4}}",
+      "text": "(-C_C*R_2*S*g_m1*g_m2*g_m5*r_o1*r_o2*r_o3*r_o4 + C_C*R_2*S*g_m1*g_m2*r_o1*r_o2*r_o4 - C_C*R_2*S*g_m1*g_m5*r_o1*r_o3*r_o4 + C_C*R_2*S*g_m1*r_o1*r_o4 - R_2*g_m1*g_m2*g_m3*g_m5*r_o1*r_o2*r_o3*r_o4 - R_2*g_m1*g_m2*g_m5*r_o1*r_o2*r_o3 - R_2*g_m1*g_m2*g_m5*r_o1*r_o2*r_o4 - R_2*g_m1*g_m3*g_m5*r_o1*r_o3*r_o4 - R_2*g_m1*g_m5*r_o1*r_o3 - R_2*g_m1*g_m5*r_o1*r_o4)/(C_2*C_C*R_2*S**2*g_m2*r_o1*r_o2*r_o4 + C_2*C_C*R_2*S**2*r_o1*r_o4 + C_2*C_C*R_2*S**2*r_o2*r_o4 - C_2*C_C*R_2*S**2*r_o3*r_o4 + C_2*R_2*S*g_m2*r_o1*r_o2 - C_2*R_2*S*g_m3*r_o3*r_o4 + C_2*R_2*S*r_o1 + C_2*R_2*S*r_o2 - C_2*R_2*S*r_o3 - C_2*R_2*S*r_o4 + C_C*R_2*S*g_m2*g_m3*g_m5*r_o1*r_o2*r_o3*r_o4 + C_C*R_2*S*g_m2*g_m5*r_o1*r_o2*r_o4 + C_C*R_2*S*g_m2*r_o1*r_o2 + C_C*R_2*S*g_m3*g_m5*r_o1*r_o3*r_o4 + C_C*R_2*S*g_m3*g_m5*r_o2*r_o3*r_o4 - C_C*R_2*S*g_m3*r_o3*r_o4 + C_C*R_2*S*g_m5*r_o1*r_o4 + C_C*R_2*S*g_m5*r_o2*r_o4 + C_C*R_2*S*r_o1 + C_C*R_2*S*r_o2 - C_C*R_2*S*r_o3 - C_C*R_2*S*r_o4 + C_C*S*g_m2*r_o1*r_o2*r_o4 + C_C*S*r_o1*r_o4 + C_C*S*r_o2*r_o4 - C_C*S*r_o3*r_o4 + g_m2*r_o1*r_o2 - g_m3*r_o3*r_o4 + r_o1 + r_o2 - r_o3 - r_o4)"
+    },
+    "frequency": {
+      "latex": "\\frac{- C_{C} R_{2} g_{m1} r_{o1} r_{o4} \\left(g_{m2} r_{o2} + 1\\right) \\left(g_{m5} r_{o3} - 1\\right) \\, S -  R_{2} g_{m1} g_{m5} r_{o1} \\left(g_{m2} r_{o2} + 1\\right) \\left(g_{m3} r_{o3} r_{o4} + r_{o3} + r_{o4}\\right)}{C_{2} C_{C} R_{2} r_{o4} \\left(g_{m2} r_{o1} r_{o2} + r_{o1} + r_{o2} - r_{o3}\\right) \\, S^{2} + \\left(C_{2} R_{2} g_{m2} r_{o1} r_{o2} - C_{2} R_{2} g_{m3} r_{o3} r_{o4} + C_{2} R_{2} r_{o1} + C_{2} R_{2} r_{o2} - C_{2} R_{2} r_{o3} - C_{2} R_{2} r_{o4} + C_{C} R_{2} g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} + C_{C} R_{2} g_{m2} r_{o1} r_{o2} + C_{C} R_{2} g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} + C_{C} R_{2} g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} - C_{C} R_{2} g_{m3} r_{o3} r_{o4} + C_{C} R_{2} g_{m5} r_{o1} r_{o4} + C_{C} R_{2} g_{m5} r_{o2} r_{o4} + C_{C} R_{2} r_{o1} + C_{C} R_{2} r_{o2} - C_{C} R_{2} r_{o3} - C_{C} R_{2} r_{o4} + C_{C} g_{m2} r_{o1} r_{o2} r_{o4} + C_{C} r_{o1} r_{o4} + C_{C} r_{o2} r_{o4} - C_{C} r_{o3} r_{o4}\\right) \\, S + g_{m2} r_{o1} r_{o2} - g_{m3} r_{o3} r_{o4} + r_{o1} + r_{o2} - r_{o3} - r_{o4}}",
+      "text": "(-C_C*R_2*S*g_m1*g_m2*g_m5*r_o1*r_o2*r_o3*r_o4 + C_C*R_2*S*g_m1*g_m2*r_o1*r_o2*r_o4 - C_C*R_2*S*g_m1*g_m5*r_o1*r_o3*r_o4 + C_C*R_2*S*g_m1*r_o1*r_o4 - R_2*g_m1*g_m2*g_m3*g_m5*r_o1*r_o2*r_o3*r_o4 - R_2*g_m1*g_m2*g_m5*r_o1*r_o2*r_o3 - R_2*g_m1*g_m2*g_m5*r_o1*r_o2*r_o4 - R_2*g_m1*g_m3*g_m5*r_o1*r_o3*r_o4 - R_2*g_m1*g_m5*r_o1*r_o3 - R_2*g_m1*g_m5*r_o1*r_o4)/(C_2*C_C*R_2*S**2*g_m2*r_o1*r_o2*r_o4 + C_2*C_C*R_2*S**2*r_o1*r_o4 + C_2*C_C*R_2*S**2*r_o2*r_o4 - C_2*C_C*R_2*S**2*r_o3*r_o4 + C_2*R_2*S*g_m2*r_o1*r_o2 - C_2*R_2*S*g_m3*r_o3*r_o4 + C_2*R_2*S*r_o1 + C_2*R_2*S*r_o2 - C_2*R_2*S*r_o3 - C_2*R_2*S*r_o4 + C_C*R_2*S*g_m2*g_m3*g_m5*r_o1*r_o2*r_o3*r_o4 + C_C*R_2*S*g_m2*g_m5*r_o1*r_o2*r_o4 + C_C*R_2*S*g_m2*r_o1*r_o2 + C_C*R_2*S*g_m3*g_m5*r_o1*r_o3*r_o4 + C_C*R_2*S*g_m3*g_m5*r_o2*r_o3*r_o4 - C_C*R_2*S*g_m3*r_o3*r_o4 + C_C*R_2*S*g_m5*r_o1*r_o4 + C_C*R_2*S*g_m5*r_o2*r_o4 + C_C*R_2*S*r_o1 + C_C*R_2*S*r_o2 - C_C*R_2*S*r_o3 - C_C*R_2*S*r_o4 + C_C*S*g_m2*r_o1*r_o2*r_o4 + C_C*S*r_o1*r_o4 + C_C*S*r_o2*r_o4 - C_C*S*r_o3*r_o4 + g_m2*r_o1*r_o2 - g_m3*r_o3*r_o4 + r_o1 + r_o2 - r_o3 - r_o4)",
+      "display_latex": "\\frac{\\mathsf{b}_{1} \\, S + \\mathsf{b}_{0}}{\\mathsf{a}_{2} \\, S^{2} + \\mathsf{a}_{1} \\, S + \\mathsf{a}_{0}}",
+      "coefficients": [
+        {
+          "latex": "\\mathsf{b}_{1} = - C_{C} R_{2} g_{m1} r_{o1} r_{o4} \\left(g_{m2} r_{o2} + 1\\right) \\left(g_{m5} r_{o3} - 1\\right)"
+        },
+        {
+          "latex": "\\mathsf{b}_{0} = - R_{2} g_{m1} g_{m5} r_{o1} \\left(g_{m2} r_{o2} + 1\\right) \\left(g_{m3} r_{o3} r_{o4} + r_{o3} + r_{o4}\\right)"
+        },
+        {
+          "latex": "\\mathsf{a}_{2} = C_{2} C_{C} R_{2} r_{o4} \\left(g_{m2} r_{o1} r_{o2} + r_{o1} + r_{o2} - r_{o3}\\right)"
+        },
+        {
+          "latex": "\\begin{aligned}\\mathsf{a}_{1} &= C_{2} R_{2} r_{o1} + C_{2} R_{2} r_{o2} \\\\ &\\quad {}+ C_{C} R_{2} r_{o1} + C_{C} R_{2} r_{o2} \\\\ &\\quad {}+ C_{C} r_{o1} r_{o4} + C_{C} r_{o2} r_{o4} \\\\ &\\quad {}- C_{2} R_{2} r_{o3} -  C_{2} R_{2} r_{o4} \\\\ &\\quad {}- C_{C} R_{2} r_{o3} -  C_{C} R_{2} r_{o4} \\\\ &\\quad {}- C_{C} r_{o3} r_{o4} + C_{2} R_{2} g_{m2} r_{o1} r_{o2} \\\\ &\\quad {}+ C_{C} R_{2} g_{m2} r_{o1} r_{o2} + C_{C} R_{2} g_{m5} r_{o1} r_{o4} \\\\ &\\quad {}+ C_{C} R_{2} g_{m5} r_{o2} r_{o4} + C_{C} g_{m2} r_{o1} r_{o2} r_{o4} \\\\ &\\quad {}- C_{2} R_{2} g_{m3} r_{o3} r_{o4} -  C_{C} R_{2} g_{m3} r_{o3} r_{o4} \\\\ &\\quad {}+ C_{C} R_{2} g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} + C_{C} R_{2} g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} \\\\ &\\quad {}+ C_{C} R_{2} g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4}\\end{aligned}"
+        },
+        {
+          "latex": "\\mathsf{a}_{0} = g_{m2} r_{o1} r_{o2} - g_{m3} r_{o3} r_{o4} + r_{o1} + r_{o2} - r_{o3} - r_{o4}"
+        }
+      ]
+    }
+  },
+  "solutions": [
+    {
+      "name": "V_1",
+      "latex": "V_{1} = - \\frac{V_{i} g_{m1} r_{o1} \\left(C_{2} C_{C} R_{2} S^{2} r_{o2} r_{o4} - C_{2} C_{C} R_{2} S^{2} r_{o3} r_{o4} - C_{2} R_{2} S g_{m3} r_{o3} r_{o4} + C_{2} R_{2} S r_{o2} - C_{2} R_{2} S r_{o3} - C_{2} R_{2} S r_{o4} + C_{C} R_{2} S g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} - C_{C} R_{2} S g_{m3} r_{o3} r_{o4} + C_{C} R_{2} S g_{m5} r_{o2} r_{o4} + C_{C} R_{2} S r_{o2} - C_{C} R_{2} S r_{o3} - C_{C} R_{2} S r_{o4} + C_{C} S r_{o2} r_{o4} - C_{C} S r_{o3} r_{o4} - g_{m3} r_{o3} r_{o4} + r_{o2} - r_{o3} - r_{o4}\\right)}{C_{2} C_{C} R_{2} S^{2} g_{m2} r_{o1} r_{o2} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o1} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o2} r_{o4} - C_{2} C_{C} R_{2} S^{2} r_{o3} r_{o4} + C_{2} R_{2} S g_{m2} r_{o1} r_{o2} - C_{2} R_{2} S g_{m3} r_{o3} r_{o4} + C_{2} R_{2} S r_{o1} + C_{2} R_{2} S r_{o2} - C_{2} R_{2} S r_{o3} - C_{2} R_{2} S r_{o4} + C_{C} R_{2} S g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} S g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} + C_{C} R_{2} S g_{m2} r_{o1} r_{o2} + C_{C} R_{2} S g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} + C_{C} R_{2} S g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} - C_{C} R_{2} S g_{m3} r_{o3} r_{o4} + C_{C} R_{2} S g_{m5} r_{o1} r_{o4} + C_{C} R_{2} S g_{m5} r_{o2} r_{o4} + C_{C} R_{2} S r_{o1} + C_{C} R_{2} S r_{o2} - C_{C} R_{2} S r_{o3} - C_{C} R_{2} S r_{o4} + C_{C} S g_{m2} r_{o1} r_{o2} r_{o4} + C_{C} S r_{o1} r_{o4} + C_{C} S r_{o2} r_{o4} - C_{C} S r_{o3} r_{o4} + g_{m2} r_{o1} r_{o2} - g_{m3} r_{o3} r_{o4} + r_{o1} + r_{o2} - r_{o3} - r_{o4}}",
+      "free": false
+    },
+    {
+      "name": "V_x",
+      "latex": "V_{x} = \\frac{V_{i} g_{m1} r_{o1} \\left(g_{m2} r_{o2} + 1\\right) \\left(C_{2} C_{C} R_{2} S^{2} r_{o3} r_{o4} + C_{2} R_{2} S g_{m3} r_{o3} r_{o4} + C_{2} R_{2} S r_{o3} + C_{2} R_{2} S r_{o4} + C_{C} R_{2} S g_{m3} r_{o3} r_{o4} + C_{C} R_{2} S r_{o3} + C_{C} R_{2} S r_{o4} + C_{C} S r_{o3} r_{o4} + g_{m3} r_{o3} r_{o4} + r_{o3} + r_{o4}\\right)}{C_{2} C_{C} R_{2} S^{2} g_{m2} r_{o1} r_{o2} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o1} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o2} r_{o4} - C_{2} C_{C} R_{2} S^{2} r_{o3} r_{o4} + C_{2} R_{2} S g_{m2} r_{o1} r_{o2} - C_{2} R_{2} S g_{m3} r_{o3} r_{o4} + C_{2} R_{2} S r_{o1} + C_{2} R_{2} S r_{o2} - C_{2} R_{2} S r_{o3} - C_{2} R_{2} S r_{o4} + C_{C} R_{2} S g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} S g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} + C_{C} R_{2} S g_{m2} r_{o1} r_{o2} + C_{C} R_{2} S g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} + C_{C} R_{2} S g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} - C_{C} R_{2} S g_{m3} r_{o3} r_{o4} + C_{C} R_{2} S g_{m5} r_{o1} r_{o4} + C_{C} R_{2} S g_{m5} r_{o2} r_{o4} + C_{C} R_{2} S r_{o1} + C_{C} R_{2} S r_{o2} - C_{C} R_{2} S r_{o3} - C_{C} R_{2} S r_{o4} + C_{C} S g_{m2} r_{o1} r_{o2} r_{o4} + C_{C} S r_{o1} r_{o4} + C_{C} S r_{o2} r_{o4} - C_{C} S r_{o3} r_{o4} + g_{m2} r_{o1} r_{o2} - g_{m3} r_{o3} r_{o4} + r_{o1} + r_{o2} - r_{o3} - r_{o4}}",
+      "free": false
+    },
+    {
+      "name": "V_y",
+      "latex": "V_{y} = \\frac{V_{i} g_{m1} r_{o1} r_{o4} \\left(g_{m2} r_{o2} + 1\\right) \\left(C_{2} R_{2} S - C_{C} R_{2} S g_{m5} r_{o3} + C_{C} R_{2} S + 1\\right)}{C_{2} C_{C} R_{2} S^{2} g_{m2} r_{o1} r_{o2} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o1} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o2} r_{o4} - C_{2} C_{C} R_{2} S^{2} r_{o3} r_{o4} + C_{2} R_{2} S g_{m2} r_{o1} r_{o2} - C_{2} R_{2} S g_{m3} r_{o3} r_{o4} + C_{2} R_{2} S r_{o1} + C_{2} R_{2} S r_{o2} - C_{2} R_{2} S r_{o3} - C_{2} R_{2} S r_{o4} + C_{C} R_{2} S g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} S g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} + C_{C} R_{2} S g_{m2} r_{o1} r_{o2} + C_{C} R_{2} S g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} + C_{C} R_{2} S g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} - C_{C} R_{2} S g_{m3} r_{o3} r_{o4} + C_{C} R_{2} S g_{m5} r_{o1} r_{o4} + C_{C} R_{2} S g_{m5} r_{o2} r_{o4} + C_{C} R_{2} S r_{o1} + C_{C} R_{2} S r_{o2} - C_{C} R_{2} S r_{o3} - C_{C} R_{2} S r_{o4} + C_{C} S g_{m2} r_{o1} r_{o2} r_{o4} + C_{C} S r_{o1} r_{o4} + C_{C} S r_{o2} r_{o4} - C_{C} S r_{o3} r_{o4} + g_{m2} r_{o1} r_{o2} - g_{m3} r_{o3} r_{o4} + r_{o1} + r_{o2} - r_{o3} - r_{o4}}",
+      "free": false
+    },
+    {
+      "name": "V_o",
+      "latex": "V_{o} = - \\frac{R_{2} V_{i} g_{m1} r_{o1} \\left(g_{m2} r_{o2} + 1\\right) \\left(C_{C} S g_{m5} r_{o3} r_{o4} - C_{C} S r_{o4} + g_{m3} g_{m5} r_{o3} r_{o4} + g_{m5} r_{o3} + g_{m5} r_{o4}\\right)}{C_{2} C_{C} R_{2} S^{2} g_{m2} r_{o1} r_{o2} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o1} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o2} r_{o4} - C_{2} C_{C} R_{2} S^{2} r_{o3} r_{o4} + C_{2} R_{2} S g_{m2} r_{o1} r_{o2} - C_{2} R_{2} S g_{m3} r_{o3} r_{o4} + C_{2} R_{2} S r_{o1} + C_{2} R_{2} S r_{o2} - C_{2} R_{2} S r_{o3} - C_{2} R_{2} S r_{o4} + C_{C} R_{2} S g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} S g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} + C_{C} R_{2} S g_{m2} r_{o1} r_{o2} + C_{C} R_{2} S g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} + C_{C} R_{2} S g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} - C_{C} R_{2} S g_{m3} r_{o3} r_{o4} + C_{C} R_{2} S g_{m5} r_{o1} r_{o4} + C_{C} R_{2} S g_{m5} r_{o2} r_{o4} + C_{C} R_{2} S r_{o1} + C_{C} R_{2} S r_{o2} - C_{C} R_{2} S r_{o3} - C_{C} R_{2} S r_{o4} + C_{C} S g_{m2} r_{o1} r_{o2} r_{o4} + C_{C} S r_{o1} r_{o4} + C_{C} S r_{o2} r_{o4} - C_{C} S r_{o3} r_{o4} + g_{m2} r_{o1} r_{o2} - g_{m3} r_{o3} r_{o4} + r_{o1} + r_{o2} - r_{o3} - r_{o4}}",
+      "free": false
+    }
+  ],
+  "conditions": [
+    {
+      "latex": "R_{2} \\ne 0",
+      "text": "R_2 != 0"
+    },
+    {
+      "latex": "V_{i} \\ne 0",
+      "text": "V_i != 0"
+    },
+    {
+      "latex": "r_{o1} \\ne 0",
+      "text": "r_o1 != 0"
+    },
+    {
+      "latex": "r_{o2} \\ne 0",
+      "text": "r_o2 != 0"
+    },
+    {
+      "latex": "r_{o3} \\ne 0",
+      "text": "r_o3 != 0"
+    },
+    {
+      "latex": "r_{o4} \\ne 0",
+      "text": "r_o4 != 0"
+    },
+    {
+      "latex": "C_{2} C_{C} R_{2} S^{2} g_{m2} r_{o1} r_{o2} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o1} r_{o4} + C_{2} C_{C} R_{2} S^{2} r_{o2} r_{o4} - C_{2} C_{C} R_{2} S^{2} r_{o3} r_{o4} + C_{2} R_{2} S g_{m2} r_{o1} r_{o2} - C_{2} R_{2} S g_{m3} r_{o3} r_{o4} + C_{2} R_{2} S r_{o1} + C_{2} R_{2} S r_{o2} - C_{2} R_{2} S r_{o3} - C_{2} R_{2} S r_{o4} + C_{C} R_{2} S g_{m2} g_{m3} g_{m5} r_{o1} r_{o2} r_{o3} r_{o4} + C_{C} R_{2} S g_{m2} g_{m5} r_{o1} r_{o2} r_{o4} + C_{C} R_{2} S g_{m2} r_{o1} r_{o2} + C_{C} R_{2} S g_{m3} g_{m5} r_{o1} r_{o3} r_{o4} + C_{C} R_{2} S g_{m3} g_{m5} r_{o2} r_{o3} r_{o4} - C_{C} R_{2} S g_{m3} r_{o3} r_{o4} + C_{C} R_{2} S g_{m5} r_{o1} r_{o4} + C_{C} R_{2} S g_{m5} r_{o2} r_{o4} + C_{C} R_{2} S r_{o1} + C_{C} R_{2} S r_{o2} - C_{C} R_{2} S r_{o3} - C_{C} R_{2} S r_{o4} + C_{C} S g_{m2} r_{o1} r_{o2} r_{o4} + C_{C} S r_{o1} r_{o4} + C_{C} S r_{o2} r_{o4} - C_{C} S r_{o3} r_{o4} + g_{m2} r_{o1} r_{o2} - g_{m3} r_{o3} r_{o4} + r_{o1} + r_{o2} - r_{o3} - r_{o4} \\ne 0",
+      "text": "C_2*C_C*R_2*S**2*g_m2*r_o1*r_o2*r_o4 + C_2*C_C*R_2*S**2*r_o1*r_o4 + C_2*C_C*R_2*S**2*r_o2*r_o4 - C_2*C_C*R_2*S**2*r_o3*r_o4 + C_2*R_2*S*g_m2*r_o1*r_o2 - C_2*R_2*S*g_m3*r_o3*r_o4 + C_2*R_2*S*r_o1 + C_2*R_2*S*r_o2 - C_2*R_2*S*r_o3 - C_2*R_2*S*r_o4 + C_C*R_2*S*g_m2*g_m3*g_m5*r_o1*r_o2*r_o3*r_o4 + C_C*R_2*S*g_m2*g_m5*r_o1*r_o2*r_o4 + C_C*R_2*S*g_m2*r_o1*r_o2 + C_C*R_2*S*g_m3*g_m5*r_o1*r_o3*r_o4 + C_C*R_2*S*g_m3*g_m5*r_o2*r_o3*r_o4 - C_C*R_2*S*g_m3*r_o3*r_o4 + C_C*R_2*S*g_m5*r_o1*r_o4 + C_C*R_2*S*g_m5*r_o2*r_o4 + C_C*R_2*S*r_o1 + C_C*R_2*S*r_o2 - C_C*R_2*S*r_o3 - C_C*R_2*S*r_o4 + C_C*S*g_m2*r_o1*r_o2*r_o4 + C_C*S*r_o1*r_o4 + C_C*S*r_o2*r_o4 - C_C*S*r_o3*r_o4 + g_m2*r_o1*r_o2 - g_m3*r_o3*r_o4 + r_o1 + r_o2 - r_o3 - r_o4 != 0"
+    }
+  ],
+  "eliminated": [
+    "V_1",
+    "V_x",
+    "V_y"
+  ],
+  "duplicates": [
+    5
+  ],
+  "rank": 4,
+  "unknown_count": 4,
+  "equation_count": 4,
+  "checked_count": 5,
+  "verified": true,
+  "free_variables": [],
+  "elapsed": 1.701,
+  "matrix_latex": "\\left[\\begin{matrix}\\frac{g_{m2} r_{o1} r_{o2} + r_{o1} + r_{o2}}{r_{o1} r_{o2}} & - \\frac{1}{r_{o2}} & 0 & 0\\\\\\frac{g_{m2} r_{o2} r_{o3} + r_{o3}}{r_{o2} r_{o3}} & \\frac{r_{o2} - r_{o3}}{r_{o2} r_{o3}} & \\frac{- g_{m3} r_{o2} r_{o3} - r_{o2}}{r_{o2} r_{o3}} & 0\\\\0 & - \\frac{1}{r_{o3}} & \\frac{C_{C} S r_{o3} r_{o4} + g_{m3} r_{o3} r_{o4} + r_{o3} + r_{o4}}{r_{o3} r_{o4}} & - C_{C} S\\\\0 & g_{m5} & - C_{C} S & \\frac{C_{2} R_{2} S + C_{C} R_{2} S + 1}{R_{2}}\\end{matrix}\\right]\\left[\\begin{matrix}V_{1}\\\\V_{x}\\\\V_{y}\\\\V_{o}\\end{matrix}\\right] = \\left[\\begin{matrix}- V_{i} g_{m1}\\\\0\\\\0\\\\0\\end{matrix}\\right]"
+}
